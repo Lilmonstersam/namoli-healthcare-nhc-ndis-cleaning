@@ -1,23 +1,28 @@
-# Namoli Healthcare — NDIS Cleaning Services (Landing Page Mockup)
+# Namoli Healthcare — Care Centre & Respite Cleaning (Landing Page Mockup)
 
-Static landing page mockup. Primary keyword: **"ndis cleaning services"** (AU, 1,095/mo, KD 2).
+Static landing page mockup for multi-site care centre operators (BlueCare / AusCare type organisations).
 
-**Audience: care providers, not individual participants.** Namoli does not do domestic cleaning, so the page targets facility decision makers in residential aged care, NDIS disability accommodation (SIL/SDA/group homes), dementia and memory support units, and respite and day centres.
+**Audience: care centre operators, not individuals and not individual accommodation.** Scope is residential care centres, including dementia and memory support wings, plus respite and day centres. Domestic cleaning and individual disability accommodation (SIL/SDA/group homes) are explicitly out of scope.
 
 ## Keyword basis (Ahrefs, AU)
 
 | Keyword | Vol/mo | KD | Role on page |
 |---|---|---|---|
-| ndis cleaning services | 1,095 | 2 | H1 / title (primary) |
-| ndis cleaning | 722 | 2 | Supporting, body copy |
-| aged care cleaning | 338 | 0 | Secondary cluster (TP 1,000) |
-| aged care cleaning services | 270 | 0 | Secondary cluster (TP 1,000) |
-| disability cleaning services | 113 | 1 | Disability-side variant |
+| aged care cleaning | 338 | 0 | Primary cluster (TP 1,000) |
+| aged care cleaning services | 270 | 0 | Primary cluster (TP 1,000) |
 | aged care cleaning melbourne / brisbane | 109 / 101 | 0 | Geo signals |
+| aged care facility cleaning | 40 | - | Supporting |
 | surface cleaning in aged care | 108 | 0 | Informational coverage (ATP/testing section) |
 | environment cleaning in aged care | 101 | - | Informational coverage (standards section) |
+| nursing home cleaning services | 30 | - | Supporting |
+| ndis cleaning services | 1,095 | 2 | Not targeted; see note |
 
-**Intent note:** the "ndis cleaning" SERP skews participant-side (Household Tasks funding, hourly rates). Ranking for it is easy (KD 2) but a share of that traffic will be individuals seeking domestic cleaning. The page handles this deliberately with an FAQ that states Namoli is facility-only, which protects lead quality. "Dementia care cleaning", "respite care cleaning" and "SIL cleaning services" have effectively no search volume in Australia, so they are used as on-page service coverage and conversion copy rather than keyword targets.
+**Positioning vs search volume, read this before judging the page on rankings.** The title and H1 now lead with "care centre" and "respite centre", which are the terms the client uses but which carry very little search volume in Australia. "Respite care cleaning" and "dementia care cleaning" return effectively no data in Ahrefs. The searchable demand for this offer sits in the **aged care cleaning** cluster (338 + 270/mo, KD 0, TP 1,000), which the body copy, FAQs and schema now support but the title tag does not.
+
+Two consequences worth a decision:
+
+1. If organic traffic matters for this page, the title and H1 should carry "aged care cleaning" somewhere, e.g. "Aged Care & Respite Centre Cleaning Services". As written, the page is optimised for how the client talks rather than how buyers search.
+2. **"NDIS cleaning services" (1,095/mo) is no longer targeted.** It was the original brief's primary keyword, but with SIL/SDA and domestic cleaning out of scope there is no NDIS-funded service left to rank for. NDIS is now referenced only where centres deliver disability respite. If that volume is still wanted, it needs a separate page and a service Namoli actually sells.
 
 ## Deploy
 
@@ -31,10 +36,10 @@ git push
 ## Notes before production
 
 - `noindex, nofollow` meta tag is set for the mockup. Remove it when the page goes live on the real domain.
-- Verify Namoli's NDIS provider registration status before publishing any "registered provider" claims. Current copy says "NDIS Worker Screening Check" and "supports your obligations under the NDIS Practice Standards", which avoids claiming NDIA registration.
-- Confirm the ATP testing, 3M protein pen and monthly audit claims apply to aged care and disability contracts, not just clinical sites.
-- Standards are referenced by name only (NDIS Practice Standards, Aged Care Quality Standards) with no clause numbers, since the strengthened aged care standards renumbered requirements. Add specifics only once verified.
-- **Confirm whether Namoli actually services SIL, SDA and group homes.** Not yet verified with the client. The copy is written as capability rather than an existing client base, and scopes the work as provider-contracted cleaning of shared and communal areas. If Namoli does not service this segment at all, the SIL/SDA card and FAQ should come out, and the page should be re-targeted to "aged care cleaning services" (KD 0, TP 1,000), because the NDIS angle depends on this segment.
-- Scope boundary to reflect in any proposal: shared and communal areas, periodic deep cleans, carpets, windows and vacancy turnovers sit with the provider contract. A resident's personal bedroom is often covered by support workers or the participant's own plan, so it is scoped separately by agreement.
+- Verify Namoli's NDIS provider registration status before publishing any NDIS-related claims. Current copy says "NDIS Worker Screening Check" and references the NDIS Practice Standards only where centres deliver disability respite, which avoids claiming NDIA registration.
+- Confirm the ATP testing, 3M protein pen and monthly audit claims apply to residential care and respite contracts, not just clinical sites.
+- **Verify the multi-site claims.** The portfolio FAQ and the "Consistent Across Every Site" bullet promise a single account manager, one reporting format, a named supervisor per centre and group-level audit roll-up. This is the strongest differentiator against a single-site cleaner and the exact thing a large operator will probe, so it must be operationally true before it goes live.
+- Standards are referenced by name only (Aged Care Quality Standards, NDIS Practice Standards) with no clause numbers, since the strengthened aged care standards renumbered requirements. Add specifics only once verified.
 - "Three-Win Philosophy" and TreeLabs claims carried over from existing brand material; confirm still current.
-- Consider a follow-up page targeting the pure "aged care cleaning services" cluster (KD 0, TP 1,000) so the NDIS and aged care demand is not competing for one URL.
+- Repo and folder are still named `namoli-healthcare-nhc-ndis-cleaning`, which no longer matches the page. Rename before this becomes the live URL slug.
+- Consider whether "NDIS cleaning services" (1,095/mo) is worth a separate page tied to a service Namoli genuinely sells, rather than leaving that demand unaddressed.
